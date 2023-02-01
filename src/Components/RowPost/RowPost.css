@@ -1,0 +1,27 @@
+.rowPost{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.rowMovieImages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow-x: scroll; 
+    overflow-y: hidden;    
+}
+
+.rowMovieImages::-webkit-scrollbar{
+    display: none;
+}
+
+.rowMovieImages img{
+    max-width: 230px;
+    max-height: 250px;
+}
+.titleCatagory{
+    color: white;
+}

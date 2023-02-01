@@ -1,0 +1,66 @@
+.banner{
+    background-color: #1a1818; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */  
+}
+.banner_content{
+   padding-top: 160px;
+   padding-left: 35px;
+   background-color: transparent;
+   color:  #FFFFFF;
+   min-height: 500px;
+   max-width: 500px;
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+.content_desc{
+    font-weight: bold;
+    max-height: 250px;
+    overflow-y: scroll;  
+}
+.content_desc::-webkit-scrollbar {
+  display: none;
+  }
+.content_btn_sec{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .play_btn,.more_btn{
+    padding: 15px 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .play_btn{
+    background-color: #FFFFFF;
+    width: 100px;
+  }
+  .more_btn{
+    background-color: #A8A8A8;
+    width: 150px;
+
+  }
+  .fade_bottom{
+    height: 100vh;
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.61),#111);
+  }
+
+  .mediaType img{
+    width: 30px;
+  }
+  .mediaType p{
+   letter-spacing: 6px;
+  }
+  .mediaType{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
