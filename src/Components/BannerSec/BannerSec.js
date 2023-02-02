@@ -2,7 +2,7 @@ import React from 'react'
 import './BannerSec.css'
 import { useState, useEffect } from 'react'
 import axios from '../../Constants/axios'
-import { api_Key , image_Url } from '../../Constants/Constants'
+import { api_Key,image_Url } from '../../Constants/Constants'
 import N from '../../Assests/n-removebg-preview.png'
 
 function BannerSec() {
@@ -11,7 +11,6 @@ function BannerSec() {
 
   useEffect(() => {
     axios.get(`trending/all/day?api_key=${api_Key}`).then((response)=>{
-      console.log(response.data);
       var num = Math.floor(Math.random() * response.data.results.length);   // here this method generate random array index number for dynamically display or load movie details.
       setMovie(response.data.results[num])
     })

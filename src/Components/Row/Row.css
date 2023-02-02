@@ -1,4 +1,4 @@
-.rowPost{
+.row{
     margin-left: 30px;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,12 @@
     display: none;
 }
 
-.rowMovieImages img{
+.poster{
+    max-width: 300px;
+    max-height: 250px;
+}
+
+.small_poster{
     max-width: 230px;
     max-height: 250px;
 }

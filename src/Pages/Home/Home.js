@@ -1,8 +1,10 @@
 import React from 'react'
 import BannerSec from '../../Components/BannerSec/BannerSec'
 import NavBar from '../../Components/NavBar/NavBar'
-import RowPost from '../../Components/RowPost/RowPost'
 import './Home.css'
+import { Orginals,Action,ComedyMovies,HorrorMovies,RomanceMovies} from '../../Urls'
+import Row from '../../Components/Row/Row'
+import Footer from '../../Components/Footer/Footer'
 
 function Home() {
   return (
@@ -13,16 +15,27 @@ function Home() {
         <main>
             <BannerSec/>
         </main>
+        <div className="rowMovieSection">
         <section>
-          <RowPost/>
+          <Row  title='Netflix Orginals' url={Orginals}/>
         </section>
         <section>
-          <RowPost/>
+        <Row  url={Action} title='Action Movies' isSmall/> 
         </section>
         <section>
-          <RowPost/>
+        <Row  url={ComedyMovies} title='Comedy Movies' isSmall/>
         </section>
-
+        <section>
+        <Row  url={HorrorMovies} title='Horror Movies' isSmall/>
+        </section>
+        <section>
+        <Row  url={RomanceMovies} title='Romance Movies' isSmall/>
+        </section>
+        </div>
+        <footer>
+          <Footer/>
+        </footer>
+       
     </div>
   )
 }
