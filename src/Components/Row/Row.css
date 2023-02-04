@@ -19,13 +19,30 @@
 }
 
 .poster{
-    max-width: 300px;
-    max-height: 250px;
+    width: 265px;
+    max-height: 600px;
+    margin-right: 10px;
+    transition: transform 450ms;   
+    cursor: pointer;
+    object-fit: contain;
+}
+.poster:hover {
+    transform: scale(1.60);
+    opacity: 1;
 }
 
 .small_poster{
-    max-width: 230px;
-    max-height: 250px;
+    width: 170px;
+    max-height: 190px;
+    margin-right: 10px;
+    transition: transform 450ms;   
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.small_poster:hover {
+    transform: scale(1.60);
+    opacity: 1;
 }
 .titleCatagory{
     color: white;

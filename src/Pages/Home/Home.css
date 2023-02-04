@@ -1,5 +1,8 @@
 header{
-    padding: 10px 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 30px;
     width: 100%;
     position: fixed;
     top: 0px;

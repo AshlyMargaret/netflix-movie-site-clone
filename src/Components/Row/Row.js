@@ -6,6 +6,8 @@ import { useState,useEffect } from 'react';
 
 
 
+
+
 function Row(props) {
 
     const [movies, setMovies] = useState([])
@@ -20,21 +22,26 @@ function Row(props) {
        })
     }, [])
 
+
+ 
+
   return (
     <div className='row'>
         <div className="rowTitle">
         <h2 className='titleCatagory'>{props.title}</h2>
-       </div>
-       <div className="rowMovieImages">
+       </div>   
+       <div className="rowMovieImages">   
        {
-         movies.map((movieObj)=>{
-          console.log("movieObj",movieObj);
+         movies.map((movieObj)=>{     
           return(
+         
             <img  className= {props.isSmall ? 'small_poster': 'poster' } src={`${image_Url+movieObj.backdrop_path}`} alt="movie" />
+           
           )         
          })
        }
        </div>
+     
     </div>
   )
 }

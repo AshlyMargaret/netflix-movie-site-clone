@@ -28,9 +28,42 @@ a{
     align-items: center;
     gap: 25px;
 }
-.navBar{
+.navBarTop{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+.browseMenu{
+    display: none;
+}
+
+/* Media Query */
+@media screen and (max-width:767px) {
+    .menuItems{
+        display: none;
+    }
+    .browseDiv{
+        width: 250px;
+        height: 250px;
+        background-color: rgb(8, 8, 8);
+        color: white;
+        padding: 20px;
+        margin-top: 10px;
+    }
+    .browseMenuItems{
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    a{
+        cursor: pointer;
+    }
+    .browseMenu{
+        display: block;
+    }
+    .footerListItems {
+     gap: 120px;
+}
 }
