@@ -66,4 +66,7 @@ a{
     .footerListItems {
      gap: 120px;
 }
+.profileSection,.netflixLeftSection{
+   font-size: 12px;
+}
 }

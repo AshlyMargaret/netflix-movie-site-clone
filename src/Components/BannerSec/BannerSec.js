@@ -40,10 +40,7 @@ function BannerSec() {
             <p>{movie ? movie.overview : ""}
             </p>
         </div>
-       </div>
-       <div className="fade_bottom"></div>
-
-     {
+        {
        moreInfo ? <div className="moreInfoSection">
         <div className="closeButton">
         <i onClick={()=>{
@@ -57,7 +54,8 @@ function BannerSec() {
         <p> OverView    : {movie  ?  movie.overview:     null}   </p>  
      </div> : null
      }
-
+    </div>
+       <div className="fade_bottom"></div>
     </div>
   )
 }
