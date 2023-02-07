@@ -13,35 +13,31 @@ function Footer() {
        </div>
        <div className="footerListItems">
            <div className="firstUlSection">
-            <ul>
-              <li><a href="">gfhh</a></li>
-              <li><a href="">gfhh</a></li>
-              <li><a href="">gfhh</a></li>
-              <li><a href="">gfhh</a></li>
+            <ul className='footerUl'>
+              <li><a href="#">Audio Description</a></li>
+              <li><a href="#">Investor Relations</a></li>
+              <li><a href="#">Legal Notices</a></li>
             </ul>
            </div>
            <div className="secondUlSection">
-            <ul>
-              <li><a href="">gfhh</a></li>
-              <li><a href="">gfhh</a></li>
-              <li><a href="">gfhh</a></li>
-              <li><a href="">gfhh</a></li>
+            <ul className='footerUl'>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="">cookies Preferences</a></li>
             </ul>
            </div>
            <div className="thirdUlSection">
-            <ul>
-              <li><a href="">gfhh</a></li>
-              <li><a href="">gfhh</a></li>
-              <li><a href="">gfhh</a></li>
-              <li><a href="">gfhh</a></li>
+            <ul className='footerUl'>
+              <li><a href="#">Gift Cards</a></li>
+              <li><a href="#">Terms Of Use</a></li>
+              <li><a href="#">Corporate Information</a></li>
             </ul>
            </div>
            <div className="fourthUlSection">
-            <ul>
-              <li><a href="">gfhh</a></li>
-              <li><a href="">gfhh</a></li>
-              <li><a href="">gfhh</a></li>
-              <li><a href="">gfhh</a></li>
+            <ul className='footerUl'>
+              <li><a href="#">Media Center</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Contact Us</a></li>
             </ul>
            </div>
        </div>

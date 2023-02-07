@@ -64,3 +64,40 @@
     flex-direction: row;
     align-items: center;
   }
+  .posterPathImage{
+    width: 250px;
+    max-height: 2500px;
+  }
+  .moreInfoSection{
+    background-color: #0e0d0d;
+    color: white;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    padding: 25px;
+    border-radius: 10px;
+    position: absolute;
+    top: 360px;
+    left: 160px;
+  }
+  .moreInfoSection p{
+    font-size: 14px;
+    line-height: 25px;
+  }
+  
+  .closeButton, .closeBtnIcon{
+    cursor: pointer;
+  }
+
+/* Media Query */
+
+
+  @media screen and (max-width:767px){
+    .moreInfoSection{
+      width: 100%;
+      left: 0px;
+    }
+  }

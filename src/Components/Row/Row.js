@@ -1,8 +1,10 @@
 import React from 'react'
 import './Row.css'
 import axios from '../../Constants/axios'
-import {image_Url } from '../../Constants/Constants'
+import {api_Key, image_Url } from '../../Constants/Constants'
 import { useState,useEffect } from 'react';
+import YouTube from 'react-youtube';
+
 
 
 
@@ -11,6 +13,8 @@ import { useState,useEffect } from 'react';
 function Row(props) {
 
     const [movies, setMovies] = useState([])
+    const [urlId,setUrlId]= useState("")
+
     
 
     useEffect(() => {
@@ -22,8 +26,25 @@ function Row(props) {
        })
     }, [])
 
-
+    const opts = {
+      height: '390',
+      width: '100%',
+      playerVars: {
+        // https://developers.google.com/youtube/player_parameters
+        autoplay: 0,
+      },
+    };
  
+    const handleMovieTrailer = (id)=>{
+      console.log("ID:",id);
+      axios.get(`movie/${id}/videos?api_key=${api_Key}&language=en-US`).then(response=>{
+        if(response.data.results.length!==0 ){
+           setUrlId(response.data.results[0])
+        }else{
+           console.log("Trailer not available");
+        }
+      })
+    }
 
   return (
     <div className='row'>
@@ -35,13 +56,17 @@ function Row(props) {
          movies.map((movieObj)=>{     
           return(
          
-            <img  className= {props.isSmall ? 'small_poster': 'poster' } src={`${image_Url+movieObj.backdrop_path}`} alt="movie" />
+            <img  onClick={()=>{
+              handleMovieTrailer(movieObj.id)
+            }} className= {props.isSmall ? 'small_poster': 'poster' } src={`${image_Url+movieObj.backdrop_path}`} alt="movie" />
            
           )         
          })
        }
        </div>
-     
+       {
+              urlId && <YouTube videoId={urlId.key} opts={opts} /> 
+            }
     </div>
   )
 }

@@ -3,8 +3,9 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 35px;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 .socialMediaIcons{
     cursor: pointer;
@@ -19,7 +20,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 200px;
+    gap: 100px;
 }
 
 li{
@@ -34,4 +35,34 @@ li{
     color: white;
     background-color: black;
     border: 1px solid white;
+}
+.footerUl{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    font-size: 13px;
+}
+.copyRight p{
+    font-size: 13px;
+
+}
+
+
+/* Media Query */
+
+
+@media screen and (max-width:767px){
+    .moreInfoSection{
+      width: 100%;
+      left: 0px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .footerListItems{
+        gap: 40px;
+    }
+    .footerUl{
+        font-size: 10px;
+    }
 }
