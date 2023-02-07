@@ -1,11 +1,24 @@
-header{
+.nav{
+    height: 68px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 50px;
     padding-left: 30px;
     width: 100%;
-    position: fixed;
     top: 0px;
+    position: fixed;
+    /* background: rgb(20, 20, 20);
+    background-image: linear-gradient( #161616,transparent);
+    background: linear-gradient(141deg, transparent, #050505 51%, #050505 75%); */
+    z-index: 1;
+   
+     /* Animations */
+     transition-timing-function: ease-in;
+     transition:all 0.5s;
+
+}
+.nav__black {
+    background-color: #111;
 }
 
 section{

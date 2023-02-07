@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Logo from '../../Assests/logo.png'
 import './NavBar.css'
 import Avatar from '../../Assests/Netflix-avatar.png'
@@ -6,6 +6,7 @@ import Avatar from '../../Assests/Netflix-avatar.png'
 function NavBar() {
 
 const [browse, setBrowse] = useState(false)
+
   return (
     <div className='navBar'>
       <div className="navBarTop">

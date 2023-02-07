@@ -29,6 +29,7 @@ a{
     gap: 25px;
 }
 .navBarTop{
+   
     display: flex;
     flex-direction: row;
     justify-content: space-between;

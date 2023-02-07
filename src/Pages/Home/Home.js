@@ -5,11 +5,27 @@ import './Home.css'
 import { Orginals,Action,ComedyMovies,HorrorMovies,RomanceMovies} from '../../Urls'
 import Row from '../../Components/Row/Row'
 import Footer from '../../Components/Footer/Footer'
+import  { useState,useEffect } from 'react'
 
 function Home() {
+  const [show, handleShow] = useState(false);
+
+  // When scroll is a 100px (down in page) we add the navbar visibilty
+  // if not remove visibility on navbar
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        handleShow(true);
+      } else handleShow(false);
+    });
+    return () => {
+      window.removeEventListener("scroll");
+    };
+  }, []);
   return (
     <div className='home'>
-        <header>
+        <header className={`nav ${show && "nav__black"}`}>
             <NavBar/>
         </header>
         <main>
